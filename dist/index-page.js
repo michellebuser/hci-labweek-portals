@@ -1,0 +1,1 @@
+document.querySelector('a-link').navigate('destination.html');
