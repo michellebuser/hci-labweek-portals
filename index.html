@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    
+    
+    <!--<script src="https://rawgit.com/ngokevin/aframe/posfirstdist/dist/aframe-master.min.js"></script>-->
+  </head>
+  <body>
+     <a-scene overlay-visibility>
+       <a-assets>
+         <img id="beach" src="https://cdn.glitch.com/07535117-42d2-4159-aba2-2351c9d7525f%2Fbeach.png?v=1623401481780">
+         <img id="forest" src="https://cdn.glitch.com/07535117-42d2-4159-aba2-2351c9d7525f%2Fforest.png?v=1623401485480">
+       </a-assets>
+       
+           
+       
+       <!-- de portals hebben een blok, omdat je dit kan "grijpen". zo kan je in de portal -->
+      
+       <!-- portal naar het strand-->
+       <!--<a-link href="" position="-2 1.5 -4" image="#beach" geometry="" material="" link="">
+         <a-entity text="Go to Beach" position="" rotation=""></a-entity>
+         <a-entity geometry="" material="" rotation="" position="" visible=""></a-entity>
+         <a-entity geometry="" material="" visible=""></a-entity>
+       </a-link>-->
+       
+       <!-- portal naar het bos-->
+       <!--<a-link href="" position="2 1.5 -4" image="#forest" geometry="" material="" link="">
+         <a-entity text="Go to Forest" position="" rotation=""></a-entity>
+         <a-entity geometry="" material="" rotation="" position="" visible=""></a-entity>
+         <a-entity geometry="" material="" visible=""></a-entity>
+       </a-link>-->
+       
+      
+       <!-- dit moet denk ik in javascript -->
+       <canvas class="a-canvas a-grab-cursor a-mouse-cursor-hover" data-aframe-canvas="true" width="825" height="877" style=""></canvas>
+       
+       <a-entity environment="preset: default;" preset-switcher></a-entity>
+       
+    </a-scene>  
+  </body>
+</html>
