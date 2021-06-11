@@ -12,19 +12,19 @@
     <script src="../../js/info-message.js"></script>
   </head>
   <body>
-    <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position environment info-message="htmlSrc: #messageText">
+    <a-scene>
      
       <a-assets>
-        <a-asset-item id="messageText" src="message.html"></a-asset-item>
         <img id="thumbBeach" crossOrigin="anonymous" src="assets/images/beach.png">
         <img id="thumbForest" crossOrigin="anonymous" src="assets/images/forest.png">
-        <a-asset-item id="messageText" src="message.html"></a-asset-item>
       </a-assets>
 
       <a-link href="beach.html" position="0 1.5 -1.0" image="#thumbBeach"></a-link>
       <a-link href="forest.html" position="3.5 1.5 -1.0" image="#thumbForest"></a-link>
+      
       <a-entity id="leftHand" link-controls="hand: left"></a-entity>
       <a-entity id="rightHand" link-controls="hand: right"></a-entity>
     </a-scene>
+
   </body>
 </html>
