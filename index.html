@@ -15,14 +15,17 @@
   <body>
     <a-scene>
       <a-entity environment="preset: default; numDressing: 500"></a-entity>
+      
       <a-assets>
-        <img id="beachThumbnail" src="beach.png">
-        <img id="forestThumbnail" src="forest.png">      
+        <img id="thumbBeach" src="beach.png">
+        <img id="thumbForest" src="forest.png">      
       </a-assets>
 
-      <a-entity link="href: forest.html; title: Go to forest; image: #forestThumbnail">
-         <a-link href="forest.html" position="0 1.5 -4" image="#forest" geometry="" material="" link=""></a-link>
-      </a-entity>
+      <a-link href="forest.html" position="0 1.5 -4" image="#thumbForest" geometry="" material="" link="">
+        <a-entity text="Go to forest" position="" rotation=""></a-entity>
+        <a-entity geometry="" material="" rotation="" position="" visible=""></a-entity>
+        <a-entity geometry="" material="" visible=""></a-entity>
+      </a-link>
 
 
       
