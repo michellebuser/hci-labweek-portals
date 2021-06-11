@@ -12,18 +12,20 @@
   </head>
   <body>
     <a-scene>
+      <a-entity environment="preset: default;"></a-entity>
 
       <a-assets>
-        <a-entity environment="preset: default;"></a-entity>
+        <img id="beachThumbnail" src="assets/images/beach.png">
+        <img id="forestThumbnail" src="assets/images/forest.png">
       </a-assets>
 
-      <!--<a-assets>
-        <img id="thumbBeach" crossOrigin="anonymous" src="assets/images/beach.png">
-        <img id="thumbDefault" crossOrigin="anonymous" src="assets/images/forest.png">
-      </a-assets>
+      <a-entity link="href: beach.html; title: Go to beach; image: #beachThumbnail">
+        <a-link href="beach.html" title="Go to beach" image="#beachThumbnail"></a-link>
+      </a-entity> 
 
-      <a-link href="beach.html" position="0 1.5 -1.0" image="#thumbBeach"></a-link>
-      <a-link href="index.html" position="3.5 1.5 -1.0" image="#thumbForest"></a-link>
+      <a-entity link="href: forest.html; title: Go to forest; image: #forestThumbnail">
+        <a-link href="forest.html" title="Go to forest" image="#forestThumbnail"></a-link>
+      </a-entity> 
 
       <a-entity id="leftHand" link-controls="hand: left"></a-entity>
       <a-entity id="rightHand" link-controls="hand: right"></a-entity>-->
