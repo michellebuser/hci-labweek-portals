@@ -13,8 +13,17 @@
     <!--<script src="https://rawgit.com/ngokevin/aframe/posfirstdist/dist/aframe-master.min.js"></script>-->
   </head>
   <body>
+    <a-assets>
+      <img id="beachThumbnail" src="assets/images/beach.png">
+      <img id="forestThumbnail" src="assets/images/forest.png">
+    </a-assets>
+
     <a-scene overlay-visibility>
       <a-entity environment="preset: default;"></a-entity>
+
+      <a-link href="forest.html" title="Go to forest" image="#forestThumbnail">
+        <a-entity link="href: forest.html; title: Go to forest; image: #forestThumbnail"></a-entity>
+      </a-link>
 
       
      
