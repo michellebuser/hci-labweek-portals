@@ -1,38 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Portals</title>
-    <meta name="description" content="Portals • A-Frame">
-
+   
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
     
-    
-    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
-
-
-
-    <!--<script src="dist/aframe-master.js"></script>
-    <script src="js/components/aframe-tooltip-component.js"></script>
-    <script src="js/components/camera-position.js"></script>
-    <script src="js/components/link-controls.js"></script>
-    <script src="../../js/info-message.js"></script>-->
   </head>
   <body>
     <a-scene>
-      <a-entity environment="preset: default"></a-entity>
-     
+
       <a-assets>
+        <a-entity environment="preset: default;"></a-entity>
+      </a-assets>
+
+      <!--<a-assets>
         <img id="thumbBeach" crossOrigin="anonymous" src="assets/images/beach.png">
-        <img id="thumbForest" crossOrigin="anonymous" src="assets/images/forest.png">
+        <img id="thumbDefault" crossOrigin="anonymous" src="assets/images/forest.png">
       </a-assets>
 
       <a-link href="beach.html" position="0 1.5 -1.0" image="#thumbBeach"></a-link>
-      <a-link href="forest.html" position="3.5 1.5 -1.0" image="#thumbForest"></a-link>
+      <a-link href="index.html" position="3.5 1.5 -1.0" image="#thumbForest"></a-link>
 
-      <!--<a-entity id="leftHand" link-controls="hand: left"></a-entity>
+      <a-entity id="leftHand" link-controls="hand: left"></a-entity>
       <a-entity id="rightHand" link-controls="hand: right"></a-entity>-->
+    
 
-    </a-scene>
-
+    </a-scene> 
   </body>
 </html>
