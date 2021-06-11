@@ -15,18 +15,18 @@
   <body>
     <a-assets>
       <img id="beach" src="assets/images/beach.png">
-      <img id="forestThumbnail" src="assets/images/forest.png">
+      <img id="forest" src="assets/images/forest.png">
     </a-assets>
 
     <a-scene overlay-visibility>
       <a-entity environment="preset: default;"></a-entity>
 
-      <a-link>
-        <a-entity link="href: forest.html; title: Go to forest; image: #forestThumbnail"></a-entity>
+      <a-link href="forest.html" title="Go to forest" image="#forest">
+        <a-entity link="href: forest.html; title: Go to forest; image: #forest"></a-entity>
       </a-link>
 
-       <a-link>
-        <a-entity link="href: beach.html; title: Go to forest; image: #forestThumbnail"></a-entity>
+       <a-link href="beach.html" title="Go to beach" image="#beach">
+        <a-entity link="href: beach.html; title: Go to beach; image: #beach"></a-entity>
       </a-link>
 
       
